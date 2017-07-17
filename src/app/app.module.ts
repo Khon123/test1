@@ -7,13 +7,15 @@ import { CollectionComponent } from './collection/collection.component';
 import {CollectableService} from "./shared/colectable.service";
 import { HeaderComponent } from './header.component';
 import {routing} from "./app.routing";
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MarketComponent,
     CollectionComponent,
-    HeaderComponent
+    HeaderComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
