@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of collectItems">
+          <span class="badge">{{ item.type }}</span>
+          <button class="btn btn-danger" (click)="onRemoveFromColletion(item)">Remove from collectables</button>&nbsp;
+          {{ item.description }}
+        </li>
+      </ul>
+      <h2 *ngIf="collectItems.length === 0">Start to add item to collection</h2>
+    </div>
+  </div>
+</div>
